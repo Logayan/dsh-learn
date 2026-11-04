@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "server-status"
+version = "0.1.0"
+description = "A local CPU, memory, and disk status command-line tool"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["psutil>=5.9"]
+
+[project.scripts]
+server-status = "server_status:main"
